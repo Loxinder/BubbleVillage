@@ -26,12 +26,12 @@ public class Quarry : MonoBehaviour {
 
     public void Upgrade()
     {
-        if ((Resources.wood >= woodToUpgrade) && (Resources.stone >= stoneToUpgrade) && (Resources.gold >= goldToUpgrade) && (Resources.gem >= gemToUpgrade))
+        if ((PlayerData.wood >= woodToUpgrade) && (PlayerData.stone >= stoneToUpgrade) && (PlayerData.gold >= goldToUpgrade) && (PlayerData.gem >= gemToUpgrade))
         {
-            Resources.wood = Resources.wood - woodToUpgrade;
-            Resources.stone = Resources.stone - stoneToUpgrade;
-            Resources.gold = Resources.gold - goldToUpgrade;
-            Resources.gem = Resources.gem - gemToUpgrade;
+            PlayerData.wood = PlayerData.wood - woodToUpgrade;
+            PlayerData.stone = PlayerData.stone - stoneToUpgrade;
+            PlayerData.gold = PlayerData.gold - goldToUpgrade;
+            PlayerData.gem = PlayerData.gem - gemToUpgrade;
             buildingLvl++;
             CalculateResources();
             DisplayResources();

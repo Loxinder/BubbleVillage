@@ -20,8 +20,7 @@ public class DwarfShooter : MonoBehaviour
     void Start()
     {
         ballStarted = false;
-        Debug.Log(Resources.dwarfs);
-        leftDwarfs = Resources.dwarfs;
+       leftDwarfs = PlayerData.dwarfs;
     }
 
     void Update()

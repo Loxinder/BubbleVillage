@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 425478}
   - 212: {fileID: 21288954}
   - 61: {fileID: 6143972}
-  - 114: {fileID: 11462788}
+  - 114: {fileID: 11413936}
   m_Layer: 0
   m_Name: Rock1
   m_TagString: Untagged
@@ -43,7 +43,7 @@ BoxCollider2D:
   m_Offset: {x: -.225440025, y: .0850717947}
   serializedVersion: 2
   m_Size: {x: .759587884, y: .464784861}
---- !u!114 &11462788
+--- !u!114 &11413936
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -51,9 +51,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 178996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eba2ee9482baaf4d92b269f9fdb4aa3, type: 3}
+  m_Script: {fileID: 11500000, guid: e88b6c54f5274ec49b891221b10978e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialType: stone
   material: 5
 --- !u!212 &21288954
 SpriteRenderer:
@@ -87,7 +88,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: materialType
+      value: stone
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: material
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 178996}

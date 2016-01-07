@@ -296,6 +296,45 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 197016913}
+--- !u!1 &201136180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 201136182}
+  - 114: {fileID: 201136181}
+  m_Layer: 0
+  m_Name: TownScripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &201136181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 201136180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 775c56b3cfb8a4c48aae3a52f93098a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &201136182
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 201136180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 386.105988, y: 466.533325, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1 &264677231
 GameObject:
   m_ObjectHideFlags: 0
@@ -3540,6 +3579,48 @@ MonoBehaviour:
   stone5: 10000
   gold5: 2500
   gem5: 500
+--- !u!1001 &1156831565
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 386.105988
+      objectReference: {fileID: 0}
+    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 466.533325
+      objectReference: {fileID: 0}
+    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1173865286
 GameObject:
   m_ObjectHideFlags: 0
@@ -5733,19 +5814,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 11430832, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
+    - target: {fileID: 11460820, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
       propertyPath: stoneText
       value: 
       objectReference: {fileID: 2071262097}
-    - target: {fileID: 11430832, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
+    - target: {fileID: 11460820, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
       propertyPath: woodText
       value: 
       objectReference: {fileID: 2071262095}
-    - target: {fileID: 11430832, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
+    - target: {fileID: 11460820, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
       propertyPath: goldText
       value: 
       objectReference: {fileID: 2071262093}
-    - target: {fileID: 11430832, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
+    - target: {fileID: 11460820, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
       propertyPath: diamondsText
       value: 
       objectReference: {fileID: 2071262096}

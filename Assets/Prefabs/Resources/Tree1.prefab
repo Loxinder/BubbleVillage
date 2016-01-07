@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 427010}
   - 212: {fileID: 21236880}
-  - 114: {fileID: 11458424}
   - 61: {fileID: 6136788}
+  - 114: {fileID: 11460836}
   m_Layer: 0
   m_Name: Tree1
   m_TagString: Untagged
@@ -43,7 +43,7 @@ BoxCollider2D:
   m_Offset: {x: .0173506737, y: -5.96046448e-08}
   serializedVersion: 2
   m_Size: {x: .625298917, y: .448969126}
---- !u!114 &11458424
+--- !u!114 &11460836
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -51,9 +51,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 127432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5598d2dca0bb734f9b6ee645d2a1e6d, type: 3}
+  m_Script: {fileID: 11500000, guid: e88b6c54f5274ec49b891221b10978e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialType: wood
   material: 5
 --- !u!212 &21236880
 SpriteRenderer:
@@ -87,7 +88,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: materialType
+      value: wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: material
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127432}
