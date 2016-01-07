@@ -3,7 +3,6 @@ using System.Collections;
 using System;
 
 
-[Serializable]
 public class PlayerData : MonoBehaviour
 {
     public static int wood;
@@ -12,4 +11,5 @@ public class PlayerData : MonoBehaviour
     public static int gem;
     public static int shroom;
     public static int dwarfs = 10;
+    public int test;
 }

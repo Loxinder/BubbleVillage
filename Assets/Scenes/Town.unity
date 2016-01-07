@@ -5830,7 +5830,8 @@ Prefab:
       propertyPath: diamondsText
       value: 
       objectReference: {fileID: 2071262096}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11461510, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1915003006

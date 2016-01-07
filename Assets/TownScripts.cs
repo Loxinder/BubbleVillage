@@ -11,6 +11,8 @@ public class TownScripts : MonoBehaviour
     {
         saver = GameObject.FindObjectOfType<Saver>();
 
-       // saver.Save();
+       saver.Save();
+
+        Debug.Log("TownScript operational - wood: " + PlayerData.wood);
     }
 }
