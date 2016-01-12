@@ -3579,48 +3579,6 @@ MonoBehaviour:
   stone5: 10000
   gold5: 2500
   gem5: 500
---- !u!1001 &1156831565
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 386.105988
-      objectReference: {fileID: 0}
-    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 466.533325
-      objectReference: {fileID: 0}
-    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 434430, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 63946cb4ae644f942a23a00998ae4a84, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1173865286
 GameObject:
   m_ObjectHideFlags: 0
@@ -4723,6 +4681,7 @@ MonoBehaviour:
   goldToUpgradeText: {fileID: 789498282}
   gemToUpgradeText: {fileID: 518622162}
   resourceCalculator: {fileID: 1123403457}
+  resourcesManager: {fileID: 1839563382}
 --- !u!1 &1674553771
 GameObject:
   m_ObjectHideFlags: 0
@@ -5527,6 +5486,7 @@ MonoBehaviour:
   goldToUpgradeText: {fileID: 840892502}
   gemToUpgradeText: {fileID: 419999484}
   resourceCalculator: {fileID: 1407125879}
+  resourcesManager: {fileID: 1839563382}
 --- !u!1 &1793535727
 GameObject:
   m_ObjectHideFlags: 0
@@ -5834,6 +5794,12 @@ Prefab:
     - {fileID: 11461510, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b9af77b37a37c904dbf6da6bffdc3dd4, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1839563382 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11430832, guid: b9af77b37a37c904dbf6da6bffdc3dd4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1839563381}
+  m_Script: {fileID: 11500000, guid: a9e0ee408b8c20943b7eedbdb14d4a56, type: 3}
 --- !u!1 &1915003006
 GameObject:
   m_ObjectHideFlags: 0
@@ -6487,14 +6453,6 @@ Prefab:
     - target: {fileID: 22463932, guid: 1bbf628e03cadad41875fcb72042866b, type: 2}
       propertyPath: m_Pivot.y
       value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22499964, guid: 1bbf628e03cadad41875fcb72042866b, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -1.94000006
-      objectReference: {fileID: 0}
-    - target: {fileID: 22499964, guid: 1bbf628e03cadad41875fcb72042866b, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 116.660004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bbf628e03cadad41875fcb72042866b, type: 2}

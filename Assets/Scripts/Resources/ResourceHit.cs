@@ -3,12 +3,14 @@ using System.Collections;
 
 public class ResourceHit : MonoBehaviour {
 
-    public static int wood;
     private DwarfShooter dwarfShooter;
     private ResourcesManager resourcesManager;
 
-    public string materialType;
+    public enum Material { Wood, Stone, Gold, Gems, Schrooms };
+
+    public Material materialType;
     public int material = 10;
+
 
     void Start()
     {
@@ -20,19 +22,19 @@ public class ResourceHit : MonoBehaviour {
     {
         switch (materialType)
         {
-            case "wood":
+            case Material.Wood:
                 resourcesManager.Wood(material);
                 break;
-            case "stone":
+            case Material.Stone:
                 resourcesManager.Stone(material);
                 break;
-            case "gold":
+            case Material.Gold:
                 resourcesManager.Gold(material);
                 break;
-            case "gems":
+            case Material.Gems:
                 resourcesManager.Gems(material);
                 break;
-            case "schrooms":
+            case Material.Schrooms:
                 resourcesManager.Shrooms(material);
                 break;
             default:

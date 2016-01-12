@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class Quarry : MonoBehaviour {
+public class Building : MonoBehaviour {
 
     public int buildingLvl;
     private int woodToUpgrade;
@@ -17,26 +17,28 @@ public class Quarry : MonoBehaviour {
     public Text gemToUpgradeText;
 
     public ResourceCalculator resourceCalculator;
+    public ResourcesManager resourcesManager;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         CalculateResources();
         DisplayResources();
     }
 
     public void Upgrade()
     {
-        if ((PlayerData.wood >= woodToUpgrade) && (PlayerData.stone >= stoneToUpgrade) && (PlayerData.gold >= goldToUpgrade) && (PlayerData.gem >= gemToUpgrade))
+        if (EnougthResources())
         {
-            PlayerData.wood = PlayerData.wood - woodToUpgrade;
-            PlayerData.stone = PlayerData.stone - stoneToUpgrade;
-            PlayerData.gold = PlayerData.gold - goldToUpgrade;
-            PlayerData.gem = PlayerData.gem - gemToUpgrade;
+            resourcesManager.Wood(-woodToUpgrade);
+            resourcesManager.Stone(-stoneToUpgrade);
+            resourcesManager.Gold(-goldToUpgrade);
+            resourcesManager.Gems(-gemToUpgrade);
             buildingLvl++;
             CalculateResources();
             DisplayResources();
         }
-         
+
     }
 
     void CalculateResources()
@@ -57,5 +59,15 @@ public class Quarry : MonoBehaviour {
 
     }
 
-
+    bool EnougthResources()
+    {
+        if((PlayerData.wood >= woodToUpgrade) && (PlayerData.stone >= stoneToUpgrade) && (PlayerData.gold >= goldToUpgrade) && (PlayerData.gem >= gemToUpgrade))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

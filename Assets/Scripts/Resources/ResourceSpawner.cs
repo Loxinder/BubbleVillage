@@ -31,25 +31,25 @@ public class ResourceSpawner : MonoBehaviour {
 	}
 	
     //Handles actual spawning
-    void SpawnResource (float rNumber, float resOne, float resTwo, float resThree)
+    void SpawnResource (float randomNumber, float resourceOneChance, float resourceTwoChance, float resourceThreeChance)
     {
-        if (resOne > rNumber)
+        if (resourceOneChance > randomNumber)
         {
-            GameObject resource = (GameObject)Instantiate(resourceOne, SetPosition(), Quaternion.identity);
+            GameObject resource = (GameObject)Instantiate(resourceOne, GetPosition(), Quaternion.identity);
         }
-        else if (resTwo > rNumber)
+        else if (resourceTwoChance > randomNumber)
         {
-            GameObject resource = (GameObject)Instantiate(resourceTwo, SetPosition(), Quaternion.identity);
+            GameObject resource = (GameObject)Instantiate(resourceTwo, GetPosition(), Quaternion.identity);
         }
-        else if (resThree > rNumber)
+        else if (resourceThreeChance > randomNumber)
         {
-            GameObject resource = (GameObject)Instantiate(resourceThree, SetPosition(), Quaternion.identity);
+            GameObject resource = (GameObject)Instantiate(resourceThree, GetPosition(), Quaternion.identity);
         }
        
     }
 
     //Makes shure that object is placed in spawner position
-    Vector2 SetPosition()
+    Vector2 GetPosition()
     {
         Vector2 spawnPosition = new Vector2(transform.position.x, transform.position.y);
         return spawnPosition;

@@ -129,6 +129,7 @@ GameObject:
   - 224: {fileID: 22463932}
   - 222: {fileID: 22277886}
   - 114: {fileID: 11482790}
+  - 114: {fileID: 11403630}
   m_Layer: 5
   m_Name: ResourcePanel
   m_TagString: Untagged
@@ -153,6 +154,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &11403630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0624b54f3271f534d89f528060d0b75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodText: {fileID: 11430714}
+  stoneText: {fileID: 11459778}
+  goldText: {fileID: 11453094}
+  diamondsText: {fileID: 11422960}
 --- !u!114 &11417040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,7 +217,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 50db027c3807d214daf5ea06b70b6d84, type: 3}
-    m_FontSize: 35
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -233,7 +249,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 50db027c3807d214daf5ea06b70b6d84, type: 3}
-    m_FontSize: 35
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -265,7 +281,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 50db027c3807d214daf5ea06b70b6d84, type: 3}
-    m_FontSize: 35
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -297,7 +313,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 50db027c3807d214daf5ea06b70b6d84, type: 3}
-    m_FontSize: 35
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -628,7 +644,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 113.699997, y: -2}
+  m_AnchoredPosition: {x: 116.660004, y: -1.94000006}
   m_SizeDelta: {x: 176, y: 39}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000

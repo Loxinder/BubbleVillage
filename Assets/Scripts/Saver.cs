@@ -10,17 +10,8 @@ public class Saver : MonoBehaviour {
 
    void Awake()
    {
-       if(saver == null)
-       {
-           DontDestroyOnLoad(gameObject);
-           saver = this;
-       }
-       else if(saver != this)
-       {
-           Destroy(gameObject);
-       }
-
-   }
+        DontDestroyOnLoad(gameObject);
+    }
 
   public void Save()
    {
@@ -30,8 +21,6 @@ public class Saver : MonoBehaviour {
 
        binaryFormatter.Serialize(file, data);
        file.Close();
-
-       Debug.Log("Saver operational - wood: " + PlayerData.wood);
    }
 
 }
