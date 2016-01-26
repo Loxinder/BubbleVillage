@@ -5,6 +5,7 @@ public class ResourceHit : MonoBehaviour {
 
     private DwarfShooter dwarfShooter;
     private ResourcesManager resourcesManager;
+    private ResourcesOnLevelCounter resourcesOnLevelCounter;
 
     public enum Material { Wood, Stone, Gold, Gems, Schrooms };
 
@@ -16,6 +17,7 @@ public class ResourceHit : MonoBehaviour {
     {
         dwarfShooter = GameObject.FindObjectOfType<DwarfShooter>();
         resourcesManager = GameObject.FindObjectOfType<ResourcesManager>();
+        resourcesOnLevelCounter = GameObject.FindObjectOfType<ResourcesOnLevelCounter>();
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -42,6 +44,7 @@ public class ResourceHit : MonoBehaviour {
                 break;
         }
 
+        resourcesOnLevelCounter.ResourceRemoved();
         Destroy(col.gameObject);
         dwarfShooter.DwarfDead();
         Destroy(gameObject);

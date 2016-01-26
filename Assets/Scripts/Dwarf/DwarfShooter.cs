@@ -19,7 +19,7 @@ public class DwarfShooter : MonoBehaviour
 
     void Start()
     {
-        ballStarted = false;
+       ballStarted = false;
        leftDwarfs = PlayerData.dwarfs;
     }
 
@@ -27,20 +27,25 @@ public class DwarfShooter : MonoBehaviour
     {
         if ((Input.GetMouseButtonDown(0)) && (!ballStarted) && (leftDwarfs > 0))
         {
-            ballStarted = true;
-
-            Vector2 target = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
-            Vector2 myPos = new Vector2(transform.position.x, transform.position.y + 1);
-            Vector2 direction = target - myPos;
-
-            direction.Normalize();
-
-            dwarfsLeftText.text = leftDwarfs.ToString();
-
-            leftDwarfs--;
-            GameObject projectile = (GameObject)Instantiate(bullet, myPos, Quaternion.identity);
-            projectile.GetComponent<Rigidbody2D>().velocity = direction * speed;
+            ShootDwarf();
         }
+    }
+
+    void ShootDwarf()
+    {
+        ballStarted = true;
+
+        Vector2 target = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
+        Vector2 myPos = new Vector2(transform.position.x, transform.position.y + 1);
+        Vector2 direction = target - myPos;
+
+        direction.Normalize();
+
+        dwarfsLeftText.text = leftDwarfs.ToString();
+
+        leftDwarfs--;
+        GameObject projectile = (GameObject)Instantiate(bullet, myPos, Quaternion.identity);
+        projectile.GetComponent<Rigidbody2D>().velocity = direction * speed;
     }
 
     void OnDrawGizmos()

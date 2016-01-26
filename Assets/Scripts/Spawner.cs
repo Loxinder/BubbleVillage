@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour
 {
+    public bool isResource;
 
     public GameObject prefabOne;
     public GameObject prefabTwo;
@@ -20,8 +21,11 @@ public class Spawner : MonoBehaviour
     private float prefabTwoCalculation;
     private float prefabThreeCalculation;
 
+    private ResourcesOnLevelCounter resourcesOnLevelCounter;
+
     void Start()
     {
+        resourcesOnLevelCounter = GameObject.FindObjectOfType<ResourcesOnLevelCounter>();
 
         float randomNumber = Random.value;
         prefabTwoCalculation = prefabOneChance + prefabTwoChance;
@@ -38,14 +42,20 @@ public class Spawner : MonoBehaviour
         if (prefabOneChance > randomNumber)
         {
             GameObject prefab = (GameObject)Instantiate(prefabOne, GetPosition(), Quaternion.identity);
+            if (isResource)
+                resourcesOnLevelCounter.AddResourceToCounter();
         }
         else if (prefabTwoChance > randomNumber)
         {
             GameObject prefab = (GameObject)Instantiate(prefabTwo, GetPosition(), Quaternion.identity);
+            if (isResource)
+                resourcesOnLevelCounter.AddResourceToCounter();
         }
         else if (prefabThreeChance > randomNumber)
         {
             GameObject prefab = (GameObject)Instantiate(prefabThree, GetPosition(), Quaternion.identity);
+            if (isResource)
+                resourcesOnLevelCounter.AddResourceToCounter();
         }
 
     }
