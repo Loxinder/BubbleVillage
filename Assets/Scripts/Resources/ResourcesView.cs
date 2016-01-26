@@ -8,6 +8,12 @@ public class ResourcesView : MonoBehaviour {
     public Text woodText;
     public Text goldText;
     public Text diamondsText;
+    public Text dwarfsText;
+
+    void Start()
+    {
+        UpdateResourcesView();
+    }
     
     public void UpdateResourcesView()
     {
@@ -15,5 +21,7 @@ public class ResourcesView : MonoBehaviour {
         woodText.text = PlayerData.wood.ToString();
         goldText.text = PlayerData.gold.ToString();
         diamondsText.text = PlayerData.gem.ToString();
+        if (dwarfsText != null)
+        dwarfsText.text = PlayerData.dwarfs.ToString();
     }
 }

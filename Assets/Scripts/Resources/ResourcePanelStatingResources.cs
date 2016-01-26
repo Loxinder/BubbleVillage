@@ -4,7 +4,7 @@ using System.Collections;
 
 public class ResourcePanelStatingResources : MonoBehaviour {
 
-    public Text woodText;
+   /* public Text woodText;
     public Text stoneText;
     public Text goldText;
     public Text diamondsText;
@@ -15,5 +15,5 @@ public class ResourcePanelStatingResources : MonoBehaviour {
         goldText.text = PlayerData.gold.ToString();
         diamondsText.text = PlayerData.gem.ToString();
     }
-
+    */
 }

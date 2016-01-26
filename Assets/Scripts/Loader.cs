@@ -26,8 +26,6 @@ public class Loader : MonoBehaviour {
             PlayerData.gem = data.gem;
             PlayerData.shroom = data.schroom;
             PlayerData.dwarfs = data.dwarfs;
-
-            Debug.Log("Loader operational");
         }
     }
 }

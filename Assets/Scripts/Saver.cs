@@ -23,6 +23,11 @@ public class Saver : MonoBehaviour {
        file.Close();
    }
 
+    void OnApplicationQuit()
+    {
+        Save();
+    }
+
 }
 
 [Serializable]

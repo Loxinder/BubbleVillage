@@ -18,32 +18,34 @@ public class ResourcesManager : MonoBehaviour {
         resourcesView.UpdateResourcesView();
     }
 
-    public void Stone(int addedWood)
+    public void Stone(int addedStone)
     {
-        PlayerData.stone = PlayerData.stone + addedWood;
+        PlayerData.stone = PlayerData.stone + addedStone;
         resourcesView.UpdateResourcesView();
     }
 
-    public void Gold(int addedWood)
+    public void Gold(int addedGold)
     {
-        PlayerData.gold = PlayerData.gold + addedWood;
+        PlayerData.gold = PlayerData.gold + addedGold;
         resourcesView.UpdateResourcesView();
     }
 
-    public void Gems(int addedWood)
+    public void Gems(int addedGems)
     {
-        PlayerData.gem = PlayerData.gem + addedWood;
+        PlayerData.gem = PlayerData.gem + addedGems;
         resourcesView.UpdateResourcesView();
     }
 
-    public void Dwarfs(int addedWood)
+    public void Dwarfs(int addedDwarfs)
     {
-        PlayerData.dwarfs = PlayerData.dwarfs + addedWood;
+        PlayerData.dwarfs = PlayerData.dwarfs + addedDwarfs;
+        if(resourcesView != null)
+            resourcesView.UpdateResourcesView();
     }
 
-    public void Shrooms(int addedWood)
+    public void Shrooms(int addedShrooms)
     {
-        PlayerData.shroom = PlayerData.shroom + addedWood;
+        PlayerData.shroom = PlayerData.shroom + addedShrooms;
     }
 
 }

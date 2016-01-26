@@ -9,7 +9,6 @@ public class PlayerData : MonoBehaviour
     public static int stone = 100000;
     public static int gold = 100000;
     public static int gem = 10000;
-    public static int shroom;
+    public static int shroom = 10;
     public static int dwarfs = 10;
-    public int test;
 }

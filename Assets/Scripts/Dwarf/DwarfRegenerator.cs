@@ -6,7 +6,14 @@ public class DwarfRegenerator : MonoBehaviour {
 
     DateTime currentDate;
     DateTime oldDate;
+    TimeSpan difference;
+
     public static DwarfRegenerator regenerator;
+    private ResourcesManager resourcesManager;
+
+
+
+    private int actualRegenerateTimer;
 
     void Awake()
     {
@@ -19,10 +26,52 @@ public class DwarfRegenerator : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+    }
 
+    void OnLevelWasLoaded()
+    {
+       resourcesManager = GameObject.FindObjectOfType<ResourcesManager>();
     }
 
     void Start()
+    {
+        resourcesManager = GameObject.FindObjectOfType<ResourcesManager>();
+
+        CalculateDifferenceInTimeSinceLastQuit();
+
+        double differenceInSeconds = difference.TotalSeconds;
+        int dwarfsRegeneratedWhenOut = (int)(differenceInSeconds / 300);
+
+        resourcesManager.Dwarfs(dwarfsRegeneratedWhenOut);
+
+        double restFromDifference = differenceInSeconds % 300;
+
+        actualRegenerateTimer = (int) restFromDifference;
+
+        StartCoroutine(addDwarf()); 
+    }
+
+   
+
+    IEnumerator addDwarf()
+    {
+        while (true)
+        {
+            if (actualRegenerateTimer >= 300)
+            {
+                resourcesManager.Dwarfs(1);
+                actualRegenerateTimer = 0;
+                yield return null;
+            }
+            else
+            {
+                actualRegenerateTimer += 1;
+                yield return new WaitForSeconds(1);
+            }
+        }
+    }
+
+    void CalculateDifferenceInTimeSinceLastQuit()
     {
         //Store the current time when it starts
         currentDate = System.DateTime.Now;
@@ -35,10 +84,10 @@ public class DwarfRegenerator : MonoBehaviour {
         Debug.Log("oldDate: " + oldDate);
 
         //Use the Subtract method and store the result as a timespan variable
-        TimeSpan difference = currentDate.Subtract(oldDate);
-        Debug.Log("Difference: " + difference);
-
+        difference = currentDate.Subtract(oldDate);
     }
+
+
 
     void OnApplicationQuit()
     {
