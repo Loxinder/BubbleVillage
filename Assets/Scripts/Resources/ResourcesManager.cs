@@ -14,38 +14,80 @@ public class ResourcesManager : MonoBehaviour {
 
     public void Wood(int addedWood)
     {
-        PlayerData.wood = PlayerData.wood + addedWood;
+        if ((PlayerData.wood + addedWood) <= PlayerData.woodMaximum)
+        {
+            PlayerData.wood = PlayerData.wood + addedWood;
+        }
+        else
+        {
+            PlayerData.wood = PlayerData.woodMaximum;
+        }
         resourcesView.UpdateResourcesView();
     }
 
     public void Stone(int addedStone)
     {
-        PlayerData.stone = PlayerData.stone + addedStone;
+        if ((PlayerData.stone + addedStone) <= PlayerData.stoneMaximum)
+        {
+            PlayerData.stone = PlayerData.stone + addedStone;
+        }
+        else
+        {
+            PlayerData.stone = PlayerData.woodMaximum;
+        }
         resourcesView.UpdateResourcesView();
     }
 
     public void Gold(int addedGold)
     {
-        PlayerData.gold = PlayerData.gold + addedGold;
+        if ((PlayerData.gold + addedGold) <= PlayerData.goldMaximum)
+        {
+            PlayerData.gold = PlayerData.gold + addedGold;
+        }
+        else
+        {
+            PlayerData.gold = PlayerData.woodMaximum;
+        }
         resourcesView.UpdateResourcesView();
     }
 
     public void Gems(int addedGems)
     {
-        PlayerData.gem = PlayerData.gem + addedGems;
+        if ((PlayerData.gem + addedGems) <= PlayerData.gemMaximum)
+        {
+            PlayerData.gem = PlayerData.gem + addedGems;
+        }
+        else
+        {
+            PlayerData.gem = PlayerData.woodMaximum;
+        }
         resourcesView.UpdateResourcesView();
     }
 
     public void Dwarfs(int addedDwarfs)
     {
-        PlayerData.dwarfs = PlayerData.dwarfs + addedDwarfs;
-        if(resourcesView != null)
+        if ((PlayerData.dwarfs + addedDwarfs) <= PlayerData.dwarfsMaximum)
+        {
+            PlayerData.dwarfs = PlayerData.dwarfs + addedDwarfs;
+        }
+        else
+        {
+            PlayerData.dwarfs = PlayerData.woodMaximum;
+        }
+        if (resourcesView != null)
             resourcesView.UpdateResourcesView();
     }
 
     public void Shrooms(int addedShrooms)
     {
-        PlayerData.shroom = PlayerData.shroom + addedShrooms;
+        if ((PlayerData.shroom + addedShrooms) <= PlayerData.shroomMaximum)
+        {
+            PlayerData.shroom = PlayerData.dwarfs + addedShrooms;
+        }
+        else
+        {
+            PlayerData.shroom = PlayerData.woodMaximum;
+        }
     }
 
 }
