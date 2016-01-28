@@ -39,6 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 894cd2d3f7b788b45be4ec64d813447e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isResource: 1
   prefabOne: {fileID: 127432, guid: b64a687eb1d3d704b87f32c80326dbfa, type: 2}
   prefabTwo: {fileID: 165220, guid: a94a1d6d97d1e2f4ab1fd285139cbe7d, type: 2}
   prefabThree: {fileID: 172344, guid: 783542d1b27d29940af14573d356b4f4, type: 2}
@@ -87,6 +88,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: prefabTwoChance
       value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: isResource
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

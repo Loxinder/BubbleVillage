@@ -18,6 +18,7 @@ public class Building : MonoBehaviour {
 
     public ResourceCalculator resourceCalculator;
     public ResourcesManager resourcesManager;
+    public BuildingSprite buildingSprite;
 
     // Use this for initialization
     void Start()
@@ -37,6 +38,7 @@ public class Building : MonoBehaviour {
             buildingLvl++;
             CalculateResources();
             DisplayResources();
+            buildingSprite.SetSprite(buildingLvl);
         }
 
     }
