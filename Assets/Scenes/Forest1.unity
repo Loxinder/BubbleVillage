@@ -210,6 +210,14 @@ Prefab:
       propertyPath: resourceOneChance
       value: .800000012
       objectReference: {fileID: 0}
+    - target: {fileID: 11437588, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
+      propertyPath: prefabTwoChance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437588, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
+      propertyPath: prefabOneChance
+      value: .352999985
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
   m_IsPrefabParent: 0
@@ -313,6 +321,10 @@ Prefab:
     - target: {fileID: 181216, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
       propertyPath: m_Name
       value: TreeSpawnerSmall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabTwoChance
+      value: .135000005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
@@ -709,6 +721,10 @@ Prefab:
       propertyPath: m_Name
       value: TreeSpawnerSmall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabTwoChance
+      value: .0599999987
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
   m_IsPrefabParent: 0
@@ -839,7 +855,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20
+  m_Text: 10
 --- !u!222 &540566996
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -975,6 +991,14 @@ Prefab:
       propertyPath: resourceTwoChance
       value: .200000003
       objectReference: {fileID: 0}
+    - target: {fileID: 11409198, guid: 1be2f1a20febc7e41a10f4e357d7dcba, type: 2}
+      propertyPath: prefabOneChance
+      value: .485000014
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409198, guid: 1be2f1a20febc7e41a10f4e357d7dcba, type: 2}
+      propertyPath: prefabTwoChance
+      value: .0520000011
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1be2f1a20febc7e41a10f4e357d7dcba, type: 2}
   m_IsPrefabParent: 0
@@ -1024,6 +1048,10 @@ Prefab:
     - target: {fileID: 181216, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
       propertyPath: m_Name
       value: TreeSpawnerSmall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabTwoChance
+      value: .119999997
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
@@ -1158,6 +1186,14 @@ Prefab:
       propertyPath: resourceTwoChance
       value: .200000003
       objectReference: {fileID: 0}
+    - target: {fileID: 11409198, guid: 1be2f1a20febc7e41a10f4e357d7dcba, type: 2}
+      propertyPath: prefabTwoChance
+      value: .075000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409198, guid: 1be2f1a20febc7e41a10f4e357d7dcba, type: 2}
+      propertyPath: prefabOneChance
+      value: .40200001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1be2f1a20febc7e41a10f4e357d7dcba, type: 2}
   m_IsPrefabParent: 0
@@ -1215,6 +1251,14 @@ Prefab:
     - target: {fileID: 11493284, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
       propertyPath: resourceOneChance
       value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437588, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
+      propertyPath: prefabTwoChance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437588, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
+      propertyPath: prefabOneChance
+      value: .372000009
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
@@ -1482,6 +1526,10 @@ Prefab:
       propertyPath: resourceOneChance
       value: .800000012
       objectReference: {fileID: 0}
+    - target: {fileID: 11437588, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
+      propertyPath: prefabTwoChance
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
   m_IsPrefabParent: 0
@@ -1535,6 +1583,10 @@ Prefab:
     - target: {fileID: 11493284, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
       propertyPath: resourceTwoChance
       value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabTwoChance
+      value: .0790000036
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
@@ -1749,6 +1801,14 @@ Prefab:
       propertyPath: m_Name
       value: TreeSpawnerSmall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabTwoChance
+      value: .127000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabOneChance
+      value: .800999999
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
   m_IsPrefabParent: 0
@@ -1899,6 +1959,14 @@ Prefab:
       propertyPath: resourceTwoChance
       value: .200000003
       objectReference: {fileID: 0}
+    - target: {fileID: 11409198, guid: 1be2f1a20febc7e41a10f4e357d7dcba, type: 2}
+      propertyPath: prefabOneChance
+      value: .349000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409198, guid: 1be2f1a20febc7e41a10f4e357d7dcba, type: 2}
+      propertyPath: prefabTwoChance
+      value: .143000007
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1be2f1a20febc7e41a10f4e357d7dcba, type: 2}
   m_IsPrefabParent: 0
@@ -1953,6 +2021,10 @@ Prefab:
       propertyPath: resourceTwoChance
       value: .300000012
       objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabTwoChance
+      value: .115999997
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
   m_IsPrefabParent: 0
@@ -2002,6 +2074,10 @@ Prefab:
     - target: {fileID: 181216, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
       propertyPath: m_Name
       value: TreeSpawnerSmall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabTwoChance
+      value: .064000003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
@@ -2168,6 +2244,14 @@ Prefab:
       propertyPath: resourceOneChance
       value: .800000012
       objectReference: {fileID: 0}
+    - target: {fileID: 11437588, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
+      propertyPath: prefabTwoChance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437588, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
+      propertyPath: prefabOneChance
+      value: .391000003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
   m_IsPrefabParent: 0
@@ -2221,6 +2305,10 @@ Prefab:
     - target: {fileID: 11493284, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
       propertyPath: resourceTwoChance
       value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabTwoChance
+      value: .0860000029
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
@@ -2279,6 +2367,14 @@ Prefab:
     - target: {fileID: 11493284, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
       propertyPath: resourceOneChance
       value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437588, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
+      propertyPath: prefabTwoChance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437588, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
+      propertyPath: prefabOneChance
+      value: .73299998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dded8073db43b3a46969d57d098b5a4f, type: 2}
@@ -2500,6 +2596,14 @@ Prefab:
     - target: {fileID: 181216, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
       propertyPath: m_Name
       value: TreeSpawnerSmall
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabTwoChance
+      value: .0299999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabOneChance
+      value: .361000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
@@ -2725,6 +2829,10 @@ Prefab:
     - target: {fileID: 181216, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
       propertyPath: m_Name
       value: TreeSpawnerSmall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493834, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}
+      propertyPath: prefabTwoChance
+      value: .108999997
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f86c8b0afe8fb8649b6ce9dfbac92048, type: 2}

@@ -26,6 +26,8 @@ public class Loader : MonoBehaviour {
             PlayerData.gem = data.gem;
             PlayerData.shroom = data.schroom;
             PlayerData.dwarfs = data.dwarfs;
+            PlayerData.lumberjackBuildingLevel = data.lubmerjackBuildingLevel;
+            PlayerData.quarryBuildingLevel = data.quarryBuildingLevel;
         }
     }
 }

@@ -39,6 +39,8 @@ public class PlayerSaveData
     public int gem = PlayerData.gem;
     public int schroom = PlayerData.shroom;
     public int dwarfs = PlayerData.dwarfs;
+    public int lubmerjackBuildingLevel = PlayerData.lumberjackBuildingLevel;
+    public int quarryBuildingLevel = PlayerData.quarryBuildingLevel;
 }
 
 

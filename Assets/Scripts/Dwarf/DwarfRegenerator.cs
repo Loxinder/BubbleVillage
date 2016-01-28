@@ -40,11 +40,11 @@ public class DwarfRegenerator : MonoBehaviour {
         CalculateDifferenceInTimeSinceLastQuit();
 
         double differenceInSeconds = difference.TotalSeconds;
-        int dwarfsRegeneratedWhenOut = (int)(differenceInSeconds / 300);
+        int dwarfsRegeneratedWhenOut = (int)(differenceInSeconds / 3);
 
         resourcesManager.Dwarfs(dwarfsRegeneratedWhenOut);
 
-        double restFromDifference = differenceInSeconds % 300;
+        double restFromDifference = differenceInSeconds % 3;
 
         actualRegenerateTimer = (int) restFromDifference;
 
@@ -57,7 +57,7 @@ public class DwarfRegenerator : MonoBehaviour {
     {
         while (true)
         {
-            if (actualRegenerateTimer >= 300)
+            if (actualRegenerateTimer >= 3)
             {
                 resourcesManager.Dwarfs(1);
                 actualRegenerateTimer = 0;

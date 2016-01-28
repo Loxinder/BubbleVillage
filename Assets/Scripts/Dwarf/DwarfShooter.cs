@@ -20,7 +20,8 @@ public class DwarfShooter : MonoBehaviour
     void Start()
     {
        ballStarted = false;
-       leftDwarfs = PlayerData.dwarfs;
+       leftDwarfs = 10;
+        dwarfsLeftText.text = leftDwarfs.ToString();
     }
 
     void Update()
@@ -40,10 +41,10 @@ public class DwarfShooter : MonoBehaviour
         Vector2 direction = target - myPos;
 
         direction.Normalize();
+        leftDwarfs--;
 
         dwarfsLeftText.text = leftDwarfs.ToString();
-
-        leftDwarfs--;
+        
         GameObject projectile = (GameObject)Instantiate(bullet, myPos, Quaternion.identity);
         projectile.GetComponent<Rigidbody2D>().velocity = direction * speed;
     }

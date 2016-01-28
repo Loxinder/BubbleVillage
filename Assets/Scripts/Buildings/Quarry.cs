@@ -2,8 +2,18 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class Quarry : Building {
+public class Quarry : GatheringBuilding {
 
-    
+    void Start()
+    {
+        buildingLvl = PlayerData.quarryBuildingLevel;
+        buildingSprite.SetSprite(buildingLvl);
+    }
+
+    override public void UpgradeBuildingLevel()
+    {
+        buildingLvl++;
+        PlayerData.quarryBuildingLevel = buildingLvl;
+    }
 
 }

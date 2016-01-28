@@ -20,6 +20,7 @@ public class Building : MonoBehaviour {
     public ResourcesManager resourcesManager;
     public BuildingSprite buildingSprite;
 
+
     // Use this for initialization
     void Start()
     {
@@ -35,13 +36,15 @@ public class Building : MonoBehaviour {
             resourcesManager.Stone(-stoneToUpgrade);
             resourcesManager.Gold(-goldToUpgrade);
             resourcesManager.Gems(-gemToUpgrade);
-            buildingLvl++;
+            UpgradeBuildingLevel();
             CalculateResources();
             DisplayResources();
             buildingSprite.SetSprite(buildingLvl);
         }
 
     }
+
+    virtual public void UpgradeBuildingLevel(){}
 
     void CalculateResources()
     {

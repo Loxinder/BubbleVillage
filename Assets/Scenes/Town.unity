@@ -1787,7 +1787,7 @@ GameObject:
   - 114: {fileID: 663374024}
   - 114: {fileID: 663374025}
   m_Layer: 5
-  m_Name: Hut
+  m_Name: Hut(not yet set)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1922,7 +1922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebebad13f363dfb40b24b47477a2d5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingLvl: 0
+  buildingLvl: 1
   buildingLvlText: {fileID: 126953692}
   woodToUpgradeText: {fileID: 1328910283}
   stoneToUpgradeText: {fileID: 682392038}
@@ -2436,13 +2436,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 264677232}
-        m_MethodName: LoadLevel
-        m_Mode: 5
+      - m_Target: {fileID: 1667114443}
+        m_MethodName: StartLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Rocks1
           m_BoolArgument: 0
@@ -3834,13 +3834,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 264677232}
-        m_MethodName: LoadLevel
-        m_Mode: 5
+      - m_Target: {fileID: 1788394362}
+        m_MethodName: StartLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Forest1
           m_BoolArgument: 0
@@ -5788,6 +5788,7 @@ GameObject:
   - 114: {fileID: 1667114440}
   - 114: {fileID: 1667114443}
   - 114: {fileID: 1667114442}
+  - 114: {fileID: 1667114444}
   m_Layer: 5
   m_Name: Quarry
   m_TagString: Untagged
@@ -5917,7 +5918,27 @@ MonoBehaviour:
   gemToUpgradeText: {fileID: 518622162}
   resourceCalculator: {fileID: 1123403457}
   resourcesManager: {fileID: 1839563382}
-  buildingSprite: {fileID: 0}
+  buildingSprite: {fileID: 1667114444}
+  level1: Rocks1
+  level2: Rocks2
+  level3: Rocks3
+  level4: Rocks4
+  level5: Rocks5
+--- !u!114 &1667114444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667114438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a97260fd5e89343a6e0a4263a4614a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level0: {fileID: 21300000, guid: 7a9a9c245dcd18848be930a98d0c564f, type: 3}
+  Level1: {fileID: 21300000, guid: d8e38952f4794154b89a40415c41f898, type: 3}
+  Level2: {fileID: 21300000, guid: d8e38952f4794154b89a40415c41f898, type: 3}
+  building: {fileID: 1667114443}
 --- !u!1 &1674553771
 GameObject:
   m_ObjectHideFlags: 0
@@ -6780,6 +6801,11 @@ MonoBehaviour:
   resourceCalculator: {fileID: 1407125879}
   resourcesManager: {fileID: 1839563382}
   buildingSprite: {fileID: 1788394363}
+  level1: Forest1
+  level2: Forest2
+  level3: Forest3
+  level4: Forest4
+  level5: Forest5
 --- !u!114 &1788394363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7162,7 +7188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .661764741, g: .572500348, b: .199502602, a: .828000009}
+  m_Color: {r: .889705896, g: .889705896, b: .889705896, a: .828000009}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
